@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical"  >
+    <include
+        android:id="@+id/friendspk_include"
+        layout="@layout/titlebar" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_competition">
+        <Button 
+            android:id="@+id/friendspk_btn_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/pk_friends2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"/>
+        <Button 
+            android:id="@+id/friendspk_btn_near"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/pk_near1"
+             android:layout_marginRight="40dp"/>
+    </LinearLayout>
+ <ListView
+            android:id="@+id/friendspk_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#0000"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:overScrollMode="never" >
+        </ListView>
+</LinearLayout>

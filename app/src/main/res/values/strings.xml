@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">翼家康</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 侧边菜单 -->
+    <string name="title_left_main">测量</string>
+    <string name="title_left_main_2">开始测量</string>
+    <string name="title_left_sport">立刻运动</string>
+    <string name="title_left_spareparts">配件管理</string>
+    <string name="title_left_friendspk">好友比拼</string>
+    <string name="title_left_competition">发起竞赛</string>
+    <string name="title_left_setgoal">设定目标</string>
+    <!-- 底部菜单 -->
+    <string name="title_bottom_measurement">首页</string>
+    <string name="title_bottom_history">历史</string>
+    <string name="title_bottom_device">设备</string>
+    <string name="title_bottom_history_2">档案</string>
+    <string name="title_bottom_information">服务</string>
+    <string name="title_bottom_set">我的</string>
+    <string name="title_bottom_shop">商城</string>
+    <!-- 版本更新 -->
+    <string name="load_soft_new_version">下载《翼家康》最新版本</string>
+    <string name="installation_soft">点击进行安装</string>
+    <string name="load_seccess">下载完成，请到后台安装最新版本</string>
+    <string name="load_progress">下载进度  </string>
+    <string name="loading">正在后台下载中...</string>
+    <!-- listView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- 顶部标题 -->
+    <string name="title_login">翼家康</string>
+    <string name="title_register">用户注册</string>
+    <string name="title_city">城市选择</string>
+    <string name="title_healthfamilylist">家庭成员健康档案</string>
+    <string name="title_recently">最近测量</string>
+    <string name="title_recentlyright">家庭成员</string>
+    <string name="title_information">健康资讯</string>
+    <string name="title_set">设置</string>
+    <string name="title_message">消息中心</string>
+    <string name="title_message2">健康服务</string>
+    <string name="title_input1">添加体重数据</string>
+    <string name="title_input2">添加体脂数据</string>
+    <string name="title_input3">添加体温数据</string>
+    <string name="title_input4">添加睡眠数据</string>
+    <string name="title_input5">添加血糖数据</string>
+    <string name="title_input6">添加血压数据</string>
+    <string name="title_remind">服药提醒列表</string>
+    <string name="title_remindhome">服药提醒</string>
+    <string name="title_reminddetail">服药提醒详情</string>
+    <string name="title_addmember">添加家庭成员</string>
+    <string name="title_editmember">基本资料</string>
+    <string name="title_addRemind">服药提醒设定</string>
+    <string name="title_informationdetail">健康资讯详情</string>
+    <string name="title_notify">通知设定</string>
+    <string name="title_jidinghe">绑定机顶盒</string>
+    <string name="title_personal">个人信息</string>
+    <string name="title_modify">修改密码</string>
+    <string name="title_wanshan">完善用户信息</string>
+    <string name="title_phone">绑定手机</string>
+    <string name="title_medicine_message">服药提醒消息</string>
+    <string name="title_about">关于翼家康</string>
+    <string name="title_help2">帮助说明</string>
+    <string name="title_forgetpass">忘记密码</string>
+    <string name="title_back">返回</string>
+    <string name="title_allread">全部已读</string>
+    <string name="title_save">保存</string>
+    <string name="title_share">分享</string>
+    <string name="title_help">查看帮助</string>
+    <string name="title_service">服务协议</string>
+    <string name="title_healthrecord">健康档案</string>
+    <string name="title_recentlyrecord">最近测量</string>
+    <string name="title_setgoals">设定目标</string>
+    <string name="title_bindequipment">绑定设备</string>
+    <string name="title_equipmentlist">配件管理</string>
+    <string name="title_addcompetition">创建竞赛</string>
+    <string name="title_competitionlist">竞赛</string>
+    <string name="title_invitationlist">邀请竞赛</string>
+    <string name="title_quanzilist">圈子消息</string>
+    <string name="title_mycompetition">我的竞赛</string>
+    <string name="title_mymessage">消息历史</string>
+    <string name="title_commentlist">评论</string>
+    <string name="title_image">图片浏览</string>
+    <string name="title_friendspk">好友比拼</string>
+    <string name="title_pk_personal">个人资料</string>
+    <string name="title_leavemessage">留言</string>
+    <string name="title_sysmessage">系统消息</string>
+    <string name="title_medicinemessage">服药提醒</string>
+    <!-- 登录 -->
+    <string name="login_tv_login">登    录</string>
+    <string name="login_tv_register">注    册</string>
+    <string name="login_tv_usernamehint">邮箱/手机号</string>
+    <string name="login_tv_forgetpass">忘记密码 ?</string>
+    <string name="login_tv_passhint">密码</string>
+    <!-- 注册 -->
+    <string name="reg_tv_commit">提    交</string>
+    <string name="reg_tv_email">手机号</string>
+    <string name="reg_tv_emailhint">输入您至高无上、独一无二的手机号吧！</string>
+    <string name="reg_tv_nickname">昵称</string>
+    <string name="reg_tv_nicknamehint">给您自个取个心爱的昵称吧~</string>
+    <string name="reg_tv_pass">密码  </string>
+    <string name="reg_tv_passhint">放心输入吧，俺不会偷看~</string>
+    <string name="reg_tv_address">地区</string>
+    <string name="reg_tv_area">您温馨的小窝扎根在地球的哪个地方？</string>
+    <string name="reg_tv_address1">省</string>
+    <string name="reg_tv_address2">市</string>
+    <string name="reg_tv_address3">县</string>
+    <string name="reg_tv_code">验证码</string>
+    <string name="reg_tv_codehint">此码已准备就绪！</string>
+    <string name="reg_tv_codeName">获取验证码</string>
+    <string name="reg_tv_content1">我已阅读并同意《</string>
+    <string name="reg_tv_content2">用户协议</string>
+    <string name="reg_tv_content3">》</string>
+    <!-- Menu -->
+    <string name="menu_tv_name1">健康档案</string>
+    <string name="menu_tv_name2">健康资讯</string>
+    <string name="menu_tv_name3">服药提醒</string>
+    <string name="menu_tv_name4">基本资料</string>
+    <string name="menu_tv_name5">设定目标</string>
+    <!-- 修改密码 -->
+    <string name="modify_tv1">当前密码</string>
+    <string name="modify_tv2">新密码</string>
+    <string name="modify_tv3">确认新密码</string>
+    <!-- 添加家庭成员 -->
+    <string name="add_tv_roleName">家庭角色名称</string>
+    <string name="add_tv_birth">出生年月日</string>
+    <string name="add_tv_birth2">出生日期</string>
+    <string name="add_tv_birth3">出生年月日 </string>
+    <string name="add_tv_height">身高（厘米） </string>
+    <string name="add_tv_phone">手机号码        </string>
+    <string name="add_tv_yzm">验证码            </string>
+    <string name="add_tv_weight">体重（公斤） </string>
+    <string name="add_tv_stepSize">步长（厘米） </string>
+    <string name="add_tv_waist">腰围（厘米） </string>
+    <string name="add_tv_sex">性别                </string>
+    <string name="add_tv_man">男</string>
+    <string name="add_tv_woman">女</string>
+    <string name="add_tv_sure">确    定</string>
+    <string name="add_tv_hint1">角色名称可以自定义</string>
+    <!-- 服药提醒 -->
+    <string name="remind_home_btn_add">添加服药提醒</string>
+    <string name="remind_detail_tv_medicineName">药品名称：</string>
+    <string name="remind_detail_tv_date">服药周期</string>
+    <string name="remind_detail_tv_time">服药时间</string>
+    <string name="remind_detail_tv_dosage">服药剂量</string>
+    <string name="remind_detail_tv_meal">餐前餐后</string>
+    <string name="remind_detail_tv_methods">提醒方式</string>
+    <string name="add_reming_tv1">服药时间  </string>
+    <string name="add_reming_tv15">至              </string>
+    <string name="add_reming_tv2">开始</string>
+    <string name="add_reming_tv16">结束</string>
+    <string name="add_reming_tv3">服用          </string>
+    <string name="add_reming_tv6">提醒时间  </string>
+    <string name="add_reming_tv7">药品名称  </string>
+    <string name="add_reming_tv8">剂量          </string>
+    <string name="add_reming_tv9">服药人</string>
+    <string name="add_reming_tv10">餐前餐后  </string>
+    <string name="add_reming_tv11">提醒方式  </string>
+    <string name="add_reming_tv12">客户端消息</string>
+    <string name="add_reming_tv13">手机短信</string>
+    <string name="add_reming_tv14">创    建</string>
+    <string name="add_reming_tv17">确    定</string>
+    <string name="add_reming_tv18">手机号码</string>
+    <!-- 资讯 -->
+    <string name="info_detail_tv1">资讯类别：</string>
+    <string name="info_detail_tv2">发布日期：</string>
+    <string name="info_detail_tv3">发布对象：</string>
+    <string name="info_detail_tv4">资讯标题：</string>
+    <string name="info_detail_tv5">资讯内容：</string>
+    <!-- 设置 -->
+    <string name="set_tv1">服药提醒设定</string>
+    <string name="set_tv5">通知设定</string>
+    <string name="set_tv2">版本更新</string>
+    <string name="set_tv3">绑定机顶盒</string>
+    <string name="set_tv4">关于翼家康</string>
+    <string name="set_tv6">配件管理</string>
+    <string name="set_tv7">已绑定设管理备</string>
+    <string name="set_tv8">健康档案</string>
+    <!-- 通知设定 -->
+    <string name="notifyset_tv1">服药提醒</string>
+    <string name="notifyset_tv2">健康资讯提醒</string>
+    <!-- 绑定机顶盒 -->
+    <string name="jidinghe_tv1">用户ID：</string>
+    <string name="jidinghe_tv2">机顶盒编号</string>
+    <string name="jidinghe_tv3">保    存</string>
+    <!-- 关于翼家康 -->
+    <string name="about_tv1">当前版本：</string>
+    <string name="about_tv2">网址：</string>
+    <string name="about_tv3">邮箱：</string>
+    <string name="about_tv4">电话：</string>
+    <string name="about_tv5">中国电信股份有限公司北京研究院    版权所有</string>
+    <string name="about_tv6">翼家康用户协议</string>
+    <!-- 个人信息 -->
+    <string name="personal_tv1">更换头像</string>
+    <string name="personal_tv7">用户邮箱</string>
+    <string name="personal_tv2">绑定机顶盒编号</string>
+    <string name="personal_tv3">性别</string>
+    <string name="personal_tv4">地区</string>
+    <string name="personal_tv5">手机</string>
+    <string name="personal_tv6">退出登录</string>
+    <string name="personal_tv8">个性签名</string>
+    <string name="personal_tv9">修改密码</string>
+    <!-- 手动录入 -->
+    <string name="inputinfo_tv1">成员角色</string>
+    <string name="inputinfo_tv2">测量时间</string>
+    <string name="inputinfo_tv3">测量项目</string>
+    <string name="inputinfo_tv4">体重        </string>
+    <string name="inputinfo_tv5">温度        </string>
+    <string name="inputinfo_tv6">血糖        </string>
+    <string name="inputinfo_tv7">低压        </string>
+    <string name="inputinfo_tv8">高压        </string>
+    <string name="inputinfo_tv9">脉率        </string>
+    <string name="inputinfo_tv10">步数        </string>
+    <string name="inputinfo_tv11">水分率    </string>
+    <string name="inputinfo_tv12">肌肉量    </string>
+    <string name="inputinfo_tv13">脂肪率    </string>
+    <string name="inputinfo_tv14">内脏脂肪\n等级</string>
+    <string name="inputinfo_tv15">公斤      </string>
+    <string name="inputinfo_tv16">%           </string>
+    <string name="inputinfo_tv17">度          </string>
+    <string name="inputinfo_tv18">厘米  </string>
+    <string name="inputinfo_tv19">mmol/L</string>
+    <string name="inputinfo_tv20">次 / 分  </string>
+    <string name="inputinfo_tv21">级          </string>
+    <string name="inputinfo_tv22">请选择</string>
+    <string name="inputinfo_tv23">步      </string>
+    <string name="inputinfo_tv24">距离        </string>
+    <string name="inputinfo_tv25">卡路里    </string>
+    <string name="inputinfo_tv26">千米  </string>
+    <string name="inputinfo_tv27">卡      </string>
+    <string name="inputinfo_tv28">mmHg  </string>
+    <string name="inputinfo_tv29">时段        </string>
+    <string name="inputinfo_tv30">入睡时间</string>
+    <string name="inputinfo_tv31">醒来时间</string>
+    <string name="inputinfo_tv32">睡眠</string>
+    <string name="inputinfo_tv33">运动</string>
+    <!-- 消息中心 -->
+    <string name="message_tv1">查看服药提醒</string>
+    <string name="message_tv2">查看健康资讯</string>
+    <string name="message_tv3">系统消息</string>
+    <string name="message_tv4">来自您的消息提醒</string>
+    <string name="message_tv5">查看圈子消息</string>
+    <!-- 健康档案 -->
+    <string name="JKC_Name">健康秤</string>
+    <string name="JKC_content">体重</string>
+    <string name="ZFY_Name">脂肪仪</string>
+    <string name="ZFY_content">体脂</string>
+    <string name="ZFY_content1">脂肪率</string>
+    <string name="ZFY_content2">水分率</string>
+    <string name="ZFY_content3">肌肉量</string>
+    <string name="ZFY_content4">内脏脂肪等级</string>
+    <string name="EWQ_Name">耳温枪</string>
+    <string name="EWQ_content">体温</string>
+    <string name="XYJ_Name">血压计</string>
+    <string name="XYJ_content">血压</string>
+    <string name="XYJ_content1">低压</string>
+    <string name="XYJ_content2">高压</string>
+    <string name="XYJ_content3">脉搏</string>
+    <string name="XTY_Name">血糖仪</string>
+    <string name="XTY_content">血糖</string>
+    <string name="JBQ_Name">计步器</string>
+    <string name="JBQ_content">手环</string>
+    <string name="JBQ_content1">步数</string>
+    <string name="JBQ_content2">距离</string>
+    <string name="JBQ_content3">卡路里</string>
+    <string name="record_tv_content1">最近六次</string>
+    <string name="record_tv_content2">最近一周</string>
+    <string name="record_tv_content3">最近一月</string>
+    <string name="record_tv_content4">全部</string>
+    <string name="record_tv_content5">的健康指数</string>
+    <!-- 最近记录 -->
+    <string name="recently_tv1">健康秤</string>
+    <string name="recently_tv2">上次称重</string>
+    <string name="recently_tv3">脂肪仪</string>
+    <string name="recently_tv4">上次水分率</string>
+    <string name="recently_tv5">上次脂肪率</string>
+    <string name="recently_tv6">上次肌肉量</string>
+    <string name="recently_tv7">上次内脏脂肪等级</string>
+    <string name="recently_tv8">耳温枪</string>
+    <string name="recently_tv9">上次体温</string>
+    <string name="recently_tv10">血压计</string>
+    <string name="recently_tv11">上次低压</string>
+    <string name="recently_tv12">上次高压</string>
+    <string name="recently_tv13">上次脉搏</string>
+    <string name="recently_tv14">血糖仪</string>
+    <string name="recently_tv15">上次血糖</string>
+    <string name="recently_tv16">计步器</string>
+    <string name="recently_tv17">上次步数</string>
+    <string name="recently_tv18">上次距离</string>
+    <string name="recently_tv19">上次卡路里</string>
+    <string name="recently_tv20">您好久没有测量了哦！！！</string>
+    <string name="recently_tv21">kg</string>
+    <string name="recently_tv22">%</string>
+    <string name="recently_tv23">℃</string>
+    <string name="recently_tv24">cm</string>
+    <string name="recently_tv25">mmol/L</string>
+    <string name="recently_tv26">pulse/min</string>
+    <string name="recently_tv27">mmHg</string>
+    <string name="recently_tv28">步</string>
+    <string name="recently_tv29">级</string>
+    <string name="recently_tv30">千米</string>
+    <string name="recently_tv31">卡</string>
+    <string name="recently_tv32">测量时间：</string>
+    <string name="recently_tv33">公斤</string>
+    <string name="recently_tv34">体重</string>
+    <string name="recently_tv35">血压</string>
+    <string name="recently_tv36">血糖</string>
+    <string name="recently_tv37">脂肪率</string>
+    <string name="recently_tv38">运动</string>
+    <string name="recently_tv39">体温</string>
+    <string name="recently_tv40">该设备没有测量数据！</string>
+    <!-- 绑定设备 -->
+    <string name="bindequipment_tv1">选择可穿戴设备</string>
+    <string name="bindequipment_tv2">使用该设备的家庭成员</string>
+    <!-- 设备列表 -->
+    <string name="equipmentlist_tv1">设备列表</string>
+    <string name="equipmentlist_tv2">提示：翼家康支持绑定多种智能手环，一键同步健康数据，帮助您更好地管理健康记录，享受贴心健康指导服务！
+</string>
+    <!-- 添加竞赛 -->
+    <string name="addcompetition_tv1">人数</string>
+    <string name="addcompetition_tv2">开始</string>
+    <string name="addcompetition_tv3">结束</string>
+    <string name="addcompetition_tv4">模式</string>
+    <string name="addcompetition_tv5">类型</string>
+    <string name="addcompetition_tv6">宣言</string>
+    <!-- 竞赛列表 -->
+    <string name="competitionlist_tv1">场次</string>
+    <string name="competitionlist_tv2">倒计时</string>
+    <string name="competitionlist_tv3">人数</string>
+    <string name="competitionlist_tv4">模式</string>
+    <string name="competitionlist_tv5">类型</string>
+    <string name="competitionlist_tv6">查看竞赛规则</string>
+    <!-- 竞赛详情 -->
+    <string name="competitionDetail_tv1">距开始</string>
+    <string name="competitionDetail_tv2">时间：</string>
+    <string name="competitionDetail_tv3">人数：</string>
+    <string name="competitionDetail_tv4">模式：</string>
+    <string name="competitionDetail_tv5">宣言：</string>
+    <!-- 测量首页 -->
+    <string name="measure_tv1">体重</string>
+    <string name="measure_tv1_1">公斤</string>
+    <string name="measure_tv2">体温</string>
+    <string name="measure_tv2_1">℃</string>
+    <string name="measure_tv3">睡眠</string>
+    <string name="measure_tv3_1">h</string>
+    <string name="measure_tv4">血压</string>
+    <string name="measure_tv4_1">mmHg</string>
+    <string name="measure_tv5">血糖</string>
+    <string name="measure_tv5_1">mmol/L</string>
+    <string name="measure_tv6">运动</string>
+    <string name="measure_tv6_1">步</string>
+    <!-- 修改密码 -->
+    <string name="findpass_tv1">找回密码</string>
+    <string name="findpass_tv2">请输入您的手机号码</string>
+    <string name="findpass_tv3">请输入验证码</string>
+    <string name="findpass_tv4">发送验证码</string>
+    <string name="findpass_tv5">请输入注册或绑定翼家康账号的手机号,我们将会发送验证码到您的手机上</string>
+    <string name="findpass_tv6">手    机    号</string>
+    <string name="findpass_tv7">新    密    码</string>
+    <string name="findpass_tv8">确认新密码</string>
+    <string name="findpass_tv9">请输入密码</string>
+    <string name="findpass_tv10">请再次输入密码</string>
+    <!-- 更换测量设备 -->
+    <string name="titlebar_btn_change">设备切换</string>
+    <string name="title_activity_change_device_list">ChangeDeviceListActivity</string>
+    <string name="title_equipmentlist_change">切换设备</string>
+    <string name="out_activity">更换设备</string>
+    <string name="title_activity_measure_blood_result">MeasureBloodResultActivity</string>
+    <string name="title_activity_measure_blood_suger_result">MeasureBloodSugerResultActivity</string>
+    <string name="title_activity_masking">MaskingActivity</string>
+    <string name="equipmentlist_tv2_2">提示：翼家康支持多种测量设备的测量，并且何以随时同步数据，让您随时了解身体状况！</string>
+    <string name="equipmentlist_tv2_3">提示：翼家康支持多种血压测量设备测量，请选择其中一种。</string>
+    <string name="title_activity_department_list">DepartmentListActivity</string>
+    <string name="title_activity_department_erke">儿科</string>
+    <string name="title_activity_department_fuke">妇科</string>
+    <string name="title_activity_department_zhongyi">中医科</string>
+    <string name="title_activity_department_pifu">皮肤科</string>
+    <string name="title_activity_department_xinli">心里科</string>
+    <string name="title_activity_department_xiahua">消化科</string>
+    <string name="title_activity_department_puwai">普外科</string>
+    <string name="title_activity_department_details">DepartmentDetailsActivity</string>
+    <string name="title_activity_doctor_details">DoctorDetailsActivity</string>
+    <string name="zeffect_recordbutton_finger_up_to_cancal_send">手指上滑，取消发送</string>
+    <string name="zeffect_recordbutton_releasing_finger_to_cancal_send">松开手指，取消发送</string>
+    <string name="zeffect_recordbutton_time_too_short">时间太短</string>
+    <string name="title_activity_family_dialog">FamilyDialogActivity</string>
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
+
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">正在加载中</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 : </string>
+
+    <!--运动下拉刷新字符串-->
+    <string name="start_refresh">下拉可以刷新</string>
+    <string name="release_refresh">松开立即刷新</string>
+    <string name="on_refresh">正在刷新数据</string>
+
+    <string name="string_neterror_toast">当前网络不可用,请检查您的网络连接!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

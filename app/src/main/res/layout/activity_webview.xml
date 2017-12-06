@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F7F7F6">
+    <include
+        android:id="@+id/webview_include"
+        layout="@layout/titlebar" />
+    <WebView
+        android:id="@+id/webview_healthservice" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/quanzi_include"
+        layout="@layout/titlebar" />
+    <com.sinosoft.fhcs.android.customview.XListView
+        android:id="@+id/quanzi_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#0000"
+        android:divider="#E3E1DE"
+        android:dividerHeight="0.7dp"
+        android:scrollbars="none" >
+    </com.sinosoft.fhcs.android.customview.XListView>
+
+</LinearLayout>

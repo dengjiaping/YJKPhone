@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6" >
+
+    <include
+        android:id="@+id/familylist_include"
+        layout="@layout/titlebar" />
+
+    <GridView
+        android:id="@+id/familylist_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/familylist_include"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:listSelector="@drawable/bg_measuremain_item" />
+
+</RelativeLayout>

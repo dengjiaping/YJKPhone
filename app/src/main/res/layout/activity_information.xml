@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6" >
+
+    <include
+        android:id="@+id/information_include"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/information_layout_lookup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information_include"
+        android:background="#e6e6e4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/information_tv_lookup_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还没有订购健康服务,请点此  “"
+            android:textColor="#737373"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/information_btn_lookup_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看健康服务"
+            android:textColor="@drawable/text_lookupservice_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/information_tv_lookup_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="”"
+            android:textColor="#737373"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/information_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/information_layout_lookup"
+        android:cacheColorHint="#0000"
+        android:childDivider="#D0CCC7"
+        android:divider="#D0CCC7"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

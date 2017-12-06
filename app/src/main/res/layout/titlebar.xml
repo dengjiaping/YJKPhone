@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/house_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/titlebg" >
+
+    <Button
+        android:id="@+id/titlebar_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_back_selector"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titlebar_btn_memuleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_menu_selector_2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/titlebar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/titlebar_btn_memu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_menu_selector"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titlebar_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:text="@string/title_save"
+        android:textColor="@drawable/text_mycompetition_selector"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titlebar_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_addmenu_selector"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titlebar_btn_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_helpmenu_selector"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/titlebar_btn_xiala_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_homeright_selecter"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/titlebar_btn_xiala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_xialamenu_selector"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/titlebar_btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:text="@string/titlebar_btn_change"
+        android:textColor="@color/info_tagselector_text"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titlebar_btn_sysmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_sysmessage_selector"
+        android:visibility="gone" />
+<Button
+        android:id="@+id/titlebar_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_titledelete_selector"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/titlebar_btn_myCompetition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:text="@string/title_mycompetition"
+        android:textColor="@drawable/text_mycompetition_selector"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+ <Button
+        android:id="@+id/titlebar_btn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:text="@string/title_mymessage"
+        android:textColor="@drawable/text_mycompetition_selector"
+        android:textSize="17sp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/titlebar_layout_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/titlebar_btn_remind_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_addmenu_selector" />
+
+        <Button
+            android:id="@+id/titlebar_btn_remind_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_menu_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

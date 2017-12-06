@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/message_include"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/message_btn_medicine"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_measuremain_item" >
+
+        <ImageView
+            android:id="@+id/message_iv_medicine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/look_medicine" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/message_iv_medicine" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text="@string/message_tv1"
+                android:textColor="#4D4D4B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_tv_medicine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flag2"
+                android:gravity="center"
+                android:text="9+"
+                android:textColor="#ffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/personal_jian_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#D0CCC7" />
+
+    <RelativeLayout
+        android:id="@+id/message_btn_information"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_measuremain_item" >
+
+        <ImageView
+            android:id="@+id/message_iv_information"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/look_information" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/message_iv_information" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text="@string/message_tv2"
+                android:textColor="#4D4D4B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_tv_information"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flag1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/personal_jian_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#D0CCC7" />
+<RelativeLayout
+        android:id="@+id/message_btn_quanzi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_measuremain_item" >
+
+        <ImageView
+            android:id="@+id/message_iv_quanzi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/look_quanzi" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/message_iv_quanzi" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text="@string/message_tv5"
+                android:textColor="#4D4D4B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_tv_quanzi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flag1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/personal_jian_right" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#D0CCC7" />
+</LinearLayout>

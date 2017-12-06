@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+    <FrameLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/tab_rg_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_bottom_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_rb_measurement"
+            style="@style/tab_rb_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_measurement_selector"
+            android:text="@string/title_bottom_measurement" />
+
+        <RadioButton
+            android:id="@+id/tab_rb_device"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_device_selector"
+            android:text="@string/title_bottom_device" />
+        <RadioButton
+            android:id="@+id/tab_rb_history"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_shop_selector"
+            android:text="@string/title_bottom_shop" />
+
+        <RadioButton
+            android:id="@+id/tab_rb_info"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_info_selector"
+            android:text="@string/title_bottom_information" />
+         <RadioButton
+            android:id="@+id/tab_rb_set"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_set_selector"
+            android:text="@string/title_bottom_set" />
+    </RadioGroup>
+</LinearLayout>
+

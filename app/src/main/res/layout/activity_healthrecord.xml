@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/healthrecord_include"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/hr_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hr_icon_jkc" />
+
+        <TextView
+            android:id="@+id/hr_tv_titlebig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="脂肪仪"
+            android:textColor="#4D4C4A"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/hr_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="("
+                android:textColor="#4D4C4A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hr_tv_titlelittle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="脂肪率"
+                android:textColor="#4D4C4A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=")"
+                android:textColor="#4D4C4A"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/hr_btn_title"
+                android:layout_width="15dp"
+                android:layout_height="9dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_hrjian_selector" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截图"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_screenshot_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/left_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/hrecord_time_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hrecord_time_one"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hrecord_time_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:tag="radio_button0"
+                android:text="@string/record_tv_content1"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/hrecord_time_two"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hrecord_time_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button1"
+                android:text="@string/record_tv_content2"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/hrecord_time_three"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hrecord_time_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button1"
+                android:text="@string/record_tv_content3"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/hrecord_time_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hrecord_time_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button1"
+                android:text="@string/record_tv_content4"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/chart"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hrecord_tv_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hrecord_layout_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="高压"
+                        android:textColor="#FFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/hrecord_tv_countgaoya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hrecord_layout_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="低压"
+                        android:textColor="#FFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/hrecord_tv_countdiya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFF"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hrecord_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="13dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/hrecord_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

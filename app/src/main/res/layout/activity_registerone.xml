@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/registerone_include"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/registerone_include"
+        android:layout_marginBottom="150dp"
+         android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/register_icon1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/reg_tv_email"
+                    android:textColor="#4D4C4A"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/regone_edt_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/register_edt1"
+                android:gravity="center_vertical"
+                android:hint="@string/reg_tv_emailhint"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="#9A9691"
+                android:textColorHint="#9A9691"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/register_icon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/reg_tv_pass"
+                    android:textColor="#4D4C4A"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/regone_edt_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/register_edt1"
+                android:gravity="center_vertical"
+                android:hint="@string/reg_tv_passhint"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="#9A9691"
+                android:textColorHint="#9A9691"
+                android:textSize="14sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/register_icon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/reg_tv_code"
+                    android:textColor="#4D4C4A"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/regone_edt_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/register_edt2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/reg_tv_codehint"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:textColor="#9A9691"
+                    android:textColorHint="#9A9691"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/regone_btn_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/btn_getcode_selector"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/regone_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_registernext_selector"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/dian2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/dian1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

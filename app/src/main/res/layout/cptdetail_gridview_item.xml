@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cptdetail_item_layoutNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone"
+         >
+
+        <com.sinosoft.fhcs.android.customview.CircleImageView
+            android:id="@+id/cptdetail_item_ivNormal"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/usericon"
+            app:border_color="#00000000"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cptdetail_item_tvNormal_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="(1)"
+                android:textColor="#B5B1AB"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/cptdetail_item_tvNormal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="先锋队"
+                android:textColor="#4C4C49"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/cptdetail_item_tvNormal_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="3456"
+                android:textColor="#FF4500"
+                android:textSize="17sp" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="公里"
+                android:textColor="#4C4C49"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cptdetail_item_layoutJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/cptdetail_item_ivJoin"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:background="@drawable/btn_cptdetailjoin_selector" />
+
+        <TextView
+            android:id="@+id/cptdetail_item_tvJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="加入他们"
+            android:textColor="@color/text_joincompetition"
+            android:textSize="17sp" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

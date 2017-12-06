@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hrtype_little1"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/JKC_Name"
+            android:textColor="@drawable/text_hrtype_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hrtype_little2"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/ZFY_Name"
+            android:textColor="@drawable/text_hrtype_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hrtype_little3"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/XTY_Name"
+            android:textColor="@drawable/text_hrtype_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hrtype_little4"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/XYJ_Name"
+            android:textColor="@drawable/text_hrtype_selector"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

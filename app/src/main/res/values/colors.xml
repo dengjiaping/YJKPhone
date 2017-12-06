@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="wheel_black">#4D4C4A</color>
+    <color name="wheel_gray">#B7B2AC</color>
+    <color name="text_login_blue">#0099AE</color>
+    <color name="text_set_gray">#4D4C4A</color>
+    <color name="text_set_press">#e5e5e5</color>
+    <color name="text_login_gray">#cccccc</color>
+    <color name="text_reg_black">#4D4C4A</color>
+    <color name="color_bg_green_record">#00AFEE</color>
+    <color name="color_bg_normal">#E7E6E3</color>
+    <color name="text_addcompetition">#4D4D4B</color>
+    <color name="listview_line">#D0CCC7</color>
+    <color name="text_info_black">#010101</color>
+    <color name="text_recently_gray">#6D6B66</color>
+    <color name="text_recently_black">#F000</color>
+    <color name="color_bg_yellow">#FEBE25</color>
+    <color name="text_message_blue">#CFF9FA</color>
+    <color name="text_medicine_gray_qian">#817F79</color>
+    <color name="measure_text1">#FFA100</color>
+    <color name="measure_text2">#FF5E68</color>
+    <color name="measure_text3">#00B0EE</color>
+    <color name="measure_text4">#4EABDC</color>
+    <color name="measure_text5">#AA82B9</color>
+    <color name="measure_text6">#00CE2F</color>
+    <color name="measure_text7">#A27C61</color>
+    <color name="measure_item_bg_normal">#F7F7F6</color>
+    <color name="measure_item_bg_click">#e5e5e5</color>
+    <color name="color_bg_gray2">#E8E7E4</color>
+    <color name="text_joincompetition">#00AFEE</color>
+    <color name="text_NOjoincompetition">#CCCCCC</color>
+    <color name="sys_noreadclick_bg">#e0e0e0</color>
+    <color name="sys_noreadnormal_bg">#F7F7F6</color>
+    <color name="sys_isreadnormal_bg">#ededed</color>
+    <color name="sys_isread_text">#9A9691</color>
+    <color name="sys_noread_text_gray">#B8B3AD</color>
+    <color name="sys_noread_text_gray2">#807D78</color>
+    <color name="sys_noread_text_black">#4D4C4A</color>
+    <color name="info_tagselector_bg">#00AFEE</color>
+    <color name="info_tagnormal_bg">#F7F7F6</color>
+    <color name="info_tagnormal_text">#4D4C4A</color>
+    <color name="info_tagselector_text">#FFFFFF</color>
+    <color name="history_black_text">#4D4C4A</color>
+    <color name="history_blue_text">#00B3EE</color>
+    <color name="text_notify_gray">#B7B2AC</color>
+    <color name="text_notify_black">#4D4C4A</color>
+	<color name="about_text">#00B0EE</color>
+	<color name="text_line_blue">#00a0e8</color>
+	<color name="text_line_black">#4D4C4A</color>
+	<color name="text_line_green">#54cb00</color>
+	<color name="text_line_yellow">#faa701</color>
+	<!-- 图表 -->
+	<color name="view_grid_line">#6A6778</color>
+    <color name="view_k_line">#00B1ED</color>
+     <color name="view_k_line2">#FFC323</color>
+     <color name="view_k_line3">#FF7E00</color>
+      <color name="view_k_line4">#00CE2F</color>
+    <color name="view_xy_text">#00B0F2</color>
+    <!-- 测量结果 -->
+    <color name="measure_green">#54cb00</color>
+    <color name="measure_red">#FF0000</color>
+    <color name="measure_gray">#E7E8E2</color>
+    <color name="measure_orange">#f39700</color>
+    <color name="light_gray2">#F0F0F0</color>
+    <color name="gray">#303030</color>
+    <color name="light_gray">#ADADAD</color>
+    <color name="light_gray1">#CCCCCC</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_devcie_bind">#00aeef</color>
+
+</resources>

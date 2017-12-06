@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical"
+    tools:context=".LoadingActivity" >
+
+    <include
+        android:id="@+id/jidinghe_include"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jdh_icon1" />
+
+        <TextView
+            android:id="@+id/jidinghe_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/jidinghe_tv1"
+            android:textColor="#4D4C4A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/jidinghe_tv_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/jidinghe_tv1"
+            android:text="sdnfalfjdlk"
+            android:textColor="#4D4C4A"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/jdh_icon2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/jidinghe_tv2"
+                android:textColor="#4D4C4A"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/jidinghe_edt_code"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/register_edt1"
+            android:gravity="center_vertical"
+            android:hint="输入您的机顶盒编号"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+			android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:maxLength="20"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textColor="#9A9691"
+            android:textColorHint="#9A9691"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jidinghe_tv_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="如何查看机顶盒编号？"
+        android:textColor="#4D4C4A"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/jidinghe_btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_jdhsave_selector" />
+
+</LinearLayout>

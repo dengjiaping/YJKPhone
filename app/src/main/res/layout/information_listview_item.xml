@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_info_noread_selector"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+<LinearLayout 
+    android:id="@+id/information_item_layout"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+     android:layout_marginRight="10dp" >
+    <ImageView
+        android:id="@+id/information_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/mother"
+        android:visibility="gone"/>
+<ImageView
+        android:id="@+id/information_img2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/video_noread"
+         android:visibility="visible" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_toRightOf="@id/information_item_layout"
+        android:orientation="vertical" 
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/information_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="有新版本的系统可以升"
+            android:textColor="@color/sys_noread_text_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/information_tv_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2014-2-3 10:30:00"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/sys_noread_text_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/personal_jian_right" />
+
+</RelativeLayout>

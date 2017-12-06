@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.sinosoft.fhcs.android.customview.CircleImageView
+        android:id="@+id/memberdialog_gridview_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mother2"
+        app:border_color="#00000000"
+        app:border_width="0dp" />
+
+    <TextView
+        android:id="@+id/memberdialog_gridview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="妈妈"
+        android:textColor="#4D4C4A"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sysmessage_include"
+        layout="@layout/titlebar" />
+
+    <ListView
+        android:id="@+id/sysmessage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#0000"
+        android:divider="#D0CCC7"
+        android:dividerHeight="0.5dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    signingConfigs {
+        release {
+            keyAlias 'healthphone'
+            keyPassword 'sinosoft_fhcs'
+            storeFile file('D:\\JavaProject\\AS_Workespce\\YJKangPhone\\signing\\healthsigning')
+            storePassword 'sinosoft_fhcs'
+        }
+        config {
+            keyAlias 'healthphone'
+            keyPassword 'sinosoft_fhcs'
+            storeFile file('D:/JavaProject/AS_Workespce/YJKangPhone/signing/healthsigning')
+            storePassword 'sinosoft_fhcs'
+        }
+        debug {
+            keyAlias 'healthphone'
+            keyPassword 'sinosoft_fhcs'
+            storeFile file('D:/JavaProject/AS_Workespce/YJKangPhone/signing/healthsigning')
+            storePassword 'sinosoft_fhcs'
+        }
+    }
+    defaultConfig {
+        applicationId "com.sinosoft.fhcs.android"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig android.signingConfigs.release
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.sinosoft.fhcs.android",
+                JPUSH_APPKEY : "431d0cc80d346a500257b201", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig android.signingConfigs.release
+            shrinkResources false
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+            minifyEnabled false
+        }
+    }
+    /* compileOptions {
+        encoding "GBK"
+    }*/
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    /* productFlavors {
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
+        }
+        tengxun {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tengxun"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+    }*/
+    //添加如下配置就ok了
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+                def fileName = "yijiakang_ver${defaultConfig.versionName}_${releaseTime()}.apk"
+//                output.outputFile = new File(output.outputFile.parent, fileName)
+//                outputFile = outputFile.name.replaceAll(".apk", fileName)
+                outputFileName = fileName //Android studio 3.+ 版本需要这样设置
+            }
+        }
+    }
+}
+/*tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':javaapk_com-SlidingMenu')
+    //    compile('cn.funtalk.miao.lib.fresco:lib.Fresco:1.0.8-SNAPSHOT') {
+
+    //        exclude module: 'support-v4'
+
+    //    }
+
+    //    compile('cn.funtalk.miao.lib.fresco:lib.Fresco:1.0.8-SNAPSHOT'){
+
+    ////添加
+
+    //        exclude module: 'nineoldandroids'
+
+    //    }
+
+    /*compile('com.nostra13.universalimageloader:universal-image-loader:1.9.5'){
+                                        //添加
+                                                exclude module: 'nineoldandroids'
+                                            }*/
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/Gson-2.2.4.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/kangdeviceplugin.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/SocialSDK_yixin_1.jar')
+    compile files('libs/SocialSDK_yixin_2.jar')
+    compile files('libs/umeng-analytics-v5.2.4.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    // 此处以JPush 3.0.9 版本为例。
+
+    // 此处以JCore 1.1.7 版本为例。
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:multidex:1.0.2'
+    compile 'cn.funtalk.miao.miaoplus:miaoplus:1.3.41-SNAPSHOT'
+    compile 'cn.funtalk.miao.lib.fresco:lib.Fresco:1.0.8-SNAPSHOT'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    compile 'com.android.support:support-v4:25.3.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+//    compile 'com.github.jwkj:LibZXing:v1.1.2' //二维码分装
+    compile project(path: ':libzxing')
+    compile 'com.yanzhenjie:permission:1.1.2'
+}
+
+
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_include"
+        layout="@layout/titlebar" />
+
+    <RadioGroup
+        android:id="@+id/choice_rq"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/choice_rb_province"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/reg_tv_address1"
+            android:textColor="#F000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/choice_rb_city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/reg_tv_address2"
+            android:textColor="#F000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/choice_rb_district"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/reg_tv_address3"
+            android:textColor="#F000"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

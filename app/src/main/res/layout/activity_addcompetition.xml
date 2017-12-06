@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/addcompt_include"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv1"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addcompt_btn_personnum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp" 
+                        android:background="@drawable/btn_addcptedit_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                         android:layout_marginLeft="8dp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv2"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addcompt_btn_dateStart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp" 
+                         android:background="@drawable/btn_addcptedit_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                         android:layout_marginRight="8dp"/>
+
+                    <Button
+                         android:layout_marginLeft="8dp"
+                        android:id="@+id/addcompt_btn_timeStart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp" 
+                         android:background="@drawable/btn_addcptedit_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv3"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addcompt_btn_dateEnd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp" 
+                         android:background="@drawable/btn_addcptedit_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <Button
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/addcompt_btn_timeEnd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp"
+                         android:background="@drawable/btn_addcptedit_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv4"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addcompt_btn_moreperson"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                       android:background="@drawable/morepeople1" />
+
+                    <Button
+                        android:id="@+id/addcompt_btn_twoperson"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                       android:background="@drawable/twopeople2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv5"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addcompt_btn_run"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/run2" />
+
+                    <Button
+                        android:id="@+id/addcompt_btn_bike"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                       android:background="@drawable/bike1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/addcompetition_tv6"
+                    android:textColor="@color/text_addcompetition"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/addcompt_edt_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_addcompetition"
+                        android:textSize="15sp" 
+                        android:maxLength="30"
+                        android:ellipsize="start"
+                        android:hint="快来和我们一起PK吧!"
+                        android:singleLine="true"
+                        android:background="@drawable/addcpt_edit_l1"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:textColorHint="#B7B2AC"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addcompt_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_addcptcreate_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

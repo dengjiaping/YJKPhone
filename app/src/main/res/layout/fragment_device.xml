@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/familylist_include"
+        layout="@layout/titlebar" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/dev_ctb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6D8FB0"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tl:tl_indicator_margin_left="2dp"
+        tl:tl_indicator_margin_right="2dp"
+        tl:tl_indicator_style="BLOCK"/>
+<!--
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/dev_ctb"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#262532"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_width="10dp"
+        tl:tl_textBold="SELECT"
+        tl:tl_textSelectColor="@color/text_devcie_bind"
+        tl:tl_textUnselectColor="@color/info_tagselector_text"
+        tl:tl_textsize="14sp" />
+-->
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/vp_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.sinosoft.fhcs.android.customview.ChildViewPager
+        android:id="@+id/vp_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

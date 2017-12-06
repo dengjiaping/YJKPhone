@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_bg"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="53dp"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_tab_main"
+            style="@style/left_radio"
+            android:drawableLeft="@drawable/left_tab_main"
+            android:text="@string/title_left_main_2"
+            android:textColor="@drawable/text_left_main" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="76dp"
+            android:background="@drawable/left_line" />
+
+        <RadioButton
+            android:id="@+id/radio_tab_sport"
+            style="@style/left_radio"
+            
+            android:drawableLeft="@drawable/left_tab_sport"
+            android:text="@string/title_left_sport"
+            android:textColor="@drawable/text_left_sport" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="76dp"
+            android:background="@drawable/left_line" />
+
+        <RadioButton
+            android:id="@+id/radio_tab_friendspk"
+            style="@style/left_radio"
+            android:drawableLeft="@drawable/left_tab_friendspk"
+            android:text="@string/title_left_friendspk"
+            android:textColor="@drawable/text_left_friendspk" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="76dp"
+            android:background="@drawable/left_line" />
+
+        <RadioButton
+            android:id="@+id/radio_tab_competition"
+            style="@style/left_radio"
+            android:drawableLeft="@drawable/left_tab_competition"
+            android:text="@string/title_left_competition"
+            android:textColor="@drawable/text_left_competition" />
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="76dp"
+            android:background="@drawable/left_line" />
+
+        <RadioButton
+            android:id="@+id/radio_tab_setgoal"
+            style="@style/left_radio"
+            android:drawableLeft="@drawable/left_tab_setgoal"
+            android:text="@string/title_left_setgoal"
+            android:textColor="@drawable/text_left_setgoal" />
+    </RadioGroup>
+</LinearLayout>
+</LinearLayout>

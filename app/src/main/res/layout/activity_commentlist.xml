@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/commentlist_include"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/commentlist_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="60dp"
+            android:cacheColorHint="#0000"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:overScrollMode="never" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E8E7E4"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/commentlist_edt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/comment_edt_bg"
+                android:ellipsize="start"
+                android:hint="请输入评论..."
+                android:maxLength="25"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:textColor="@color/text_addcompetition"
+                android:textColorHint="#A8A49F"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/commentlist_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_commentsend_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

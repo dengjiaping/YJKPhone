@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60dip"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center"
+	>
+	<ImageView android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:id="@+id/image"
+	           android:src="@drawable/banbenicon"
+	           android:layout_marginLeft="10dip"
+	           android:layout_marginRight="10dip"/>
+	          
+	           
+	<ProgressBar android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_toRightOf="@id/image"
+	             android:id="@+id/progresss"
+	             android:layout_marginTop="2dip"
+	             style="?android:attr/progressBarStyleHorizontal"
+	             android:layout_marginRight="10dip"/>
+	             <TextView android:layout_height="wrap_content"
+	          android:layout_width="wrap_content"
+	          android:id="@+id/texts" 
+	          android:text="222"
+	          android:layout_below="@id/progresss"
+	          android:layout_toRightOf="@id/image"
+	          android:textColor="@android:color/black"
+	          android:layout_marginTop="5dip"/> 
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_parent_device"
+    android:background="@color/info_tagselector_text"
+    tools:context="com.sinosoft.fhcs.android.activity.BindDeviceActivity">
+
+    <include
+        android:id="@+id/addcompt_include"
+        layout="@layout/titlebar" />
+    <WebView
+        android:id="@+id/wv_dev_bind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_device_bind"
+        android:layout_below="@+id/addcompt_include"
+        android:layout_centerInParent="true"
+        android:scrollbars="none"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ll_device_bind"
+        android:background="@color/light_gray1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            >
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:text="来一个"
+                android:textColor="@drawable/text_device_bind"
+                android:background="@drawable/btn_bind_selector"/>
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:text="去绑定"
+                android:layout_marginLeft="@dimen/dimen_73_dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@drawable/text_device_bind"
+                android:background="@drawable/btn_bind_selector"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

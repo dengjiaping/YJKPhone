@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F6"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/remindhome_include"
+        layout="@layout/titlebar" />
+
+    <com.sinosoft.fhcs.android.customview.XListView
+        android:id="@+id/remindhome_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/remindhome_include"
+        android:layout_marginBottom="100dp"
+        android:cacheColorHint="#0000"
+        android:divider="#E3E1DE"
+        android:dividerHeight="0.7dp"
+        android:scrollbars="none" >
+    </com.sinosoft.fhcs.android.customview.XListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/remindhome_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_addmed_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

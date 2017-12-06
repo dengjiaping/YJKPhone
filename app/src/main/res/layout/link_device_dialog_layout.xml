@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_background_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/item_background_radius"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView_title_mydialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40_dip"
+            android:gravity="center_horizontal"
+            android:text="连接设备"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_38_dip"/>
+        <LinearLayout
+            android:id="@+id/ll_searching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_33_dip"
+            >
+            <TextView
+                android:id="@+id/tv_bind_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在连接"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_36_dip"
+                android:layout_marginLeft="@dimen/dimen_30_dip"
+                />
+            <ImageView
+                android:id="@+id/iv_search_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_87_dip"
+            android:layout_below="@id/textView_title_mydialog"
+            android:background="@drawable/item_background_radius"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button_complete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_background_radius"
+                android:text="完成"
+                android:textColor="@drawable/text_device_bind"
+                android:textSize="@dimen/dimen_36_dip" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

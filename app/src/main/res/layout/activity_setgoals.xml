@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F7F7F6"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/recently_include"
+            layout="@layout/titlebar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/setgoals_btn_leftF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/btn_binde_left_selector"/>
+
+                    <ViewFlipper
+                        android:id="@+id/setgoals_flipper_familymember"
+                        android:layout_width="160dp"
+                        android:layout_height="fill_parent" />
+
+                    <Button
+                        android:id="@+id/setgoals_btn_rightF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="-10dp"
+                       android:background="@drawable/btn_binde_right_selector"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_weight" />
+
+                            <TextView
+                               android:layout_width="50dp"
+                                 android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="体重"
+                                android:textColor="@color/text_line_yellow"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_weight"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="71"
+                                        android:textColor="@color/text_line_yellow"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="公斤"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_weight"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_weight"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg3"
+                                    android:thumb="@drawable/thumb_dn3" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/setgoal_seekbar_bmi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/text_line_black"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_gaoya" />
+
+                            <TextView
+                               android:layout_width="50dp"
+                                 android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="高压"
+                                android:textColor="#6CABE0"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_gaoya"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="71"
+                                        android:textColor="#6CABE0"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="mmHg"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_gaoya"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_gaoya"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg4"
+                                    android:thumb="@drawable/thumb_dn4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_xuetang" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="血糖"
+                                android:gravity="center"
+                                android:textColor="#A286C0"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_xuetang"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="71"
+                                        android:textColor="#A286C0"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="mmol/L"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_xuetang"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_xuetang"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg5"
+                                    android:thumb="@drawable/thumb_dn5" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_zfl" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                 android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="脂肪率"
+                                android:textColor="#9B7F69"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_zfl"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="71"
+                                        android:textColor="#9B7F69"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="%"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_zfl"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_zfl"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg6"
+                                    android:thumb="@drawable/thumb_dn6" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_sport" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                 android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="运动"
+                                android:textColor="@color/text_line_green"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_sport"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="71"
+                                        android:textColor="@color/text_line_green"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="步"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_sport"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_sport"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg2"
+                                    android:thumb="@drawable/thumb_dn2" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/goal_sleep" />
+
+                            <TextView
+                               android:layout_width="50dp"
+                                 android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="睡眠"
+                                android:textColor="@color/text_line_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="13dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_Hour"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="7"
+                                        android:textColor="@color/text_line_blue"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="小时"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/setgoals_tv_Minute"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/text_line_blue"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="分钟"
+                                        android:textColor="@color/text_line_black"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.sinosoft.fhcs.android.customview.VerticalLineView
+                                    android:id="@+id/setgoal_seekbar_lineview_sleep"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp" >
+                                </com.sinosoft.fhcs.android.customview.VerticalLineView>
+
+                                <SeekBar
+                                    android:id="@+id/setgoal_seekbar_sleep"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginRight="13dp"
+                                    android:maxHeight="3dp"
+                                    android:minHeight="3dp"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:progressDrawable="@drawable/seekbar_bg1"
+                                    android:thumb="@drawable/thumb_dn1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E1DE" />
+
+                <Button
+                    android:id="@+id/setgoal_seekbar_btn_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/btn_goalsave_selector" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
